@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(133deg, #2c59d0 40%, #2d7be8 60%);
+  margin: 0;
+  /* height: 100vh; */
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2c59d0;
+  padding: 1.25em;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: large;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #05aba7;
+}
+
+ul.topnav li a.active {
+  background-color: #04aa6d;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+/* .model-wrapper{
+  display: flex;
+} */
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em;
+}
+
+.card {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.card:hover{
+  border: 4px dotted whitesmoke;
+
+}
+
+.img-cards {
+  width: 400px;
+  max-width: 350px;
+}
+
+.card-texts {
+  font-size: 30px;
+  margin: .3em;
+  color: #ccc;
+  text-align: center;
+  padding: 0.5em;
+}
+
+footer{
+  text-align: center;
+  font-size: x-large;
+
+}
+
+a,
+.foot-link{
+text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cards, 
+  .card{
+    display: flex;
+    flex-direction: column;
+    max-width:100% ;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    outline: none;
+    border: none;
+  }
+  .card:hover{
+    
+    border: none;
+  }
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+/*footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aqua;
+    color: rgb(10, 4, 4);
+    text-align: center;
+  }*/
+.center {
+  width: 10%;
+}
